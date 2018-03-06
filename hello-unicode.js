@@ -8,6 +8,7 @@ with CTRL-V
 // CTRL-K a* en vim  produce α
 // CTRL-K b* en vim  produce β
 // ☺ CTRL-K 0U 
+// or ':set digraph' and then a CTRL-H * produces α
 
 /*
  * In Vim, pressing <ga> on a character reveals its representation in decimal, octal, and hex.

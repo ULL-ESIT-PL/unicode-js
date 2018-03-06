@@ -1,3 +1,27 @@
+###  Unicode Basics
+
+Quote from [JavaScript has a Unicode problem](https://mathiasbynens.be/notes/javascript-unicode):
+
+Before we take a closer look at JavaScript, let’s make sure we’re all on the same page when it comes to Unicode.
+
+It’s easiest to think of Unicode as a database that maps any symbol you can think of to a number called its code point, and to a unique name. That way, it’s easy to refer to specific symbols without actually using the symbol itself. Examples:
+
+* A is U+0041 LATIN CAPITAL LETTER A.
+* a is U+0061 LATIN SMALL LETTER A.
+* © is U+00A9 COPYRIGHT SIGN.
+* ☃ is U+2603 SNOWMAN.
+* 💩 is U+1F4A9 PILE OF POO.
+
+Code points are usually formatted as hexadecimal numbers, zero-padded up to at least four digits, with a U+ prefix.
+
+The possible code point values range from U+0000 to U+10FFFF. That’s over 1.1 million possible symbols. To keep things organised, Unicode divides this range of code points into 17 planes that consist of about 65 thousand code points each.
+
+The first plane (U+0000 → U+FFFF) and is called the **Basic Multilingual Plane** or **BMP**, and it’s probably the most important one, as it contains all the most commonly used symbols. Most of the time you don’t need any code points outside of the BMP for text documents in English. Just like any other Unicode plane, it groups about 65 thousand symbols.
+
+That leaves us about 1 million other code points (U+010000 → U+10FFFF) that live outside the BMP. The planes these code points belong to are called **supplementary planes**, or **astral planes**.
+
+Astral code points are pretty easy to recognize: if you need more than 4 hexadecimal digits to represent the code point, it’s an astral code point.
+
 ### [Strings and character codes](http://eloquentjavascript.net/05_higher_order.html#code_units)
 
 Strings, too, have to be modeled as a series of bits to be able to
