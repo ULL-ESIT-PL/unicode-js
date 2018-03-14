@@ -1,3 +1,27 @@
+/*
+ *
+Vim Digraphs are used to enter characters that normally cannot be entered by
+an ordinary keyboard.  These are mostly printable non-ASCII characters.  The
+digraphs are easier to remember than the decimal number that can be entered
+with CTRL-V
+*/
+// CTRL-K a* en vim  produce α
+// CTRL-K b* en vim  produce β
+// ☺ CTRL-K 0U 
+// or ':set digraph' and then 'a CTRL-H *' produces α
+
+/*
+ * In Vim, pressing <ga> on a character reveals its representation in decimal, octal, and hex.
+ * 
+ * Exercise: press "ga" on this character: α
+ *
+ *  I have installed plugin characterize.vim that also gives:
+ *  Unicode character names: U+00A9 COPYRIGHT SYMBOL CTRL-V+u00a9: ©
+ *  Vim digraphs (type after <C-K> to insert the character): Co, cO CTRL-K+Co: © 
+ *  Emoji codes: :copyright: Exercise: Try "ga" here 🍎
+ *  HTML entities: &copy;
+ */
+
 // See https://eloquentjavascript.net/05_higher_order.html
 let inspect = require("util").inspect;
 
@@ -7,7 +31,7 @@ console.log("horseShoe.length ="+horseShoe.length);
 // → 4
 
 for (let ch of "🐴👟") {
-  console.log(ch + " has " + ch.length + " units"); 
+  console.log(ch + " has " + ch.length + " units");  // 2 units
 }
 //
 //  You can use the spread operator (...) to turn strings into arrays:

@@ -15,7 +15,7 @@ with CTRL-V
  * 
  * Exercise: press "ga" on this character: α
  *
- *  I have installed plugin characterize.vim that also gives:
+ *  I have installed plugin 'characterize.vim' that also gives:
  *  Unicode character names: U+00A9 COPYRIGHT SYMBOL CTRL-V+u00a9: ©
  *  Vim digraphs (type after <C-K> to insert the character): Co, cO CTRL-K+Co: © 
  *  Emoji codes: :copyright: Exercise: Try "ga" here 🍎
