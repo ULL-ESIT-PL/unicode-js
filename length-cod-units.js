@@ -40,7 +40,8 @@ console.log("[...'🐴👟'].length = "+[...'🐴👟'].length);
 // → 2
 console.log(horseShoe[0]);
 // → (Invalid half-character)
-
+console.log([...horseShoe][0]);
+// 🐴
 console.log("ABC".charCodeAt(0)); // returns 65
 console.log("ABC".charCodeAt(1)); // returns 66
 console.log(horseShoe.charCodeAt(0));
